@@ -1,3 +1,5 @@
-# cs5781-assignments
+# CS5781 Assignments
 
-Personal repo for CS5781 (AML) at Cornell Tech
+This repo contains my solutions to the assignments of the course CS5781 - Applied Machine Learning at Cornell Tech in Fall 2023.
+
+[Course Website](https://kuleshov-group.github.io/aml-website/)
