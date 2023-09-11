@@ -119,7 +119,25 @@ Three examples of categorical features include:
     "HouseStyle", "ExterQual", "BsmtCond"
 \end{lstlisting}
 
-Let \texttt{LotArea} from the numerical features and \texttt{HouseStyle} from the categorical features to be the two features that to illustrate the distribution. Figure \ref{fig:feature_distribution} shows the distribution of these two features.
+Let \texttt{LotArea} from the numerical features and \texttt{HouseStyle} from the categorical features to be the two features that to illustrate the distribution. Figure \ref{fig:feature_distribution} shows the distribution of these two features. The code in Listing \ref{lst:feature_distribution_vis} is used to plot the histogram to illustrate the distribution of \texttt{LotArea} and \texttt{HouseStyle}.
+
+\begin{lstlisting}[language=Python, label={lst:feature_distribution_vis}, caption={Plotting the histogram to illustrate the distribution of \texttt{LotArea} and \texttt{HouseStyle}}]
+# plot the histogram to illustrate the distribution of "LotArea"
+plt.figure(figsize=(10, 6))
+sns.distplot(df["LotArea"], bins=50, kde=False)
+plt.title("Distribution of LotArea")
+plt.xlabel("LotArea")
+plt.ylabel("Count")
+plt.savefig(os.path.join(IMG_PATH, "LotArea.png"))
+
+# plot the histogram to illustrate the distribution of "HouseStyle"
+plt.figure(figsize=(10, 6))
+sns.countplot(x=df["HouseStyle"])
+plt.title("Distribution of HouseStyle")
+plt.xlabel("HouseStyle")
+plt.ylabel("Count")
+plt.savefig(os.path.join(IMG_PATH, "HouseStyle.png"))
+\end{lstlisting}
 
 \begin{figure}[!htbp]
     \centering
