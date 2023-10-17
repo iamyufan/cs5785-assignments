@@ -3,4 +3,10 @@
 *.DS_Store
 
 # Iris dataset in hw0
-./hw0/iris/*
+hw0/iris/*
+
+# hw3
+hw3/data/Q1/*
+hw3/data/Q1/images/*
+*.png
+hw3/data/Q1/test.txt
