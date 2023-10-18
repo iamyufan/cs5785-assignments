@@ -8,5 +8,6 @@ hw0/iris/*
 # hw3
 hw3/data/Q1/*
 hw3/data/Q1/images/*
-*.png
 hw3/data/Q1/test.txt
+hw3/faces/*
+hw3/img/*
