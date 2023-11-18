@@ -11,3 +11,6 @@ hw3/data/Q1/images/*
 hw3/data/Q1/test.txt
 hw3/faces/*
 hw3/img/*
+
+# All zip files under all directories
+*.zip
